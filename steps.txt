@@ -1,0 +1,22 @@
+-   Initialize the React App with Vite
+-   Install @reduxjs/toolkit and react-redux
+-   Structure the project
+-   Added the assets folder and import them
+-   Intall tailwindcss, postcss, and autoprefixer
+-   Init the Tailwind CSS
+-   import custom fonts in tailwind.config.js and import font link in index.html
+-   Do the tailwind configuration in App.css
+-   Import all the css from GitHub
+-   set background and gradient on App.jsx 
+-   Create components Demo and Hero
+-   Design the Hero section (Header, Heading, and Sub-heading)
+-   Design the Demo section (Input field)
+-   Initialize the article state with url: '', summary: ''
+-   Create the handleSubmit async function (Initialize)
+-   Add value, setArticle state on onChange in input field
+-   Import the Provider from react-redux and wrap the entire application within Provider
+-   Create 'store.js' file, import configureStore from @reduxjs/toolkit, and create reducer and middleware
+-   Create article.js file, import craeteApi and fetchBaseQuery from @reduxjs/toolkit/query/react
+    then export articleApi (createApi function)
+-   Import articleApi from article.js file in store.js file
+-   Add the reducerPath in the reducer
