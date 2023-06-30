@@ -20,3 +20,21 @@
     then export articleApi (createApi function)
 -   Import articleApi from article.js file in store.js file
 -   Add the reducerPath in the reducer
+-   Passing articleApi.middleware to middleware
+-   Import store into main.jsx and passing store to Provider
+-   Add endpoint to article.js
+-   Add baseQuery to article.js
+-   Go to the RapidAPI, find the Article Extractor and Summarizer Api and Subscribe the FREE plan for testing purpose
+-   select the summarize endpoint, If you wanna test it let's click 'Test endpoint'
+-   copy the entire options and go back to article.js and paste there
+-   We need the url, so copy that entire url all the way to the forward slash withour summarize and paste it into baseUrl in createApi
+-   We need header, so add prepareHeaders into baseQuery
+-   set header with 'X-RapidAPI-Key' and actual 'KEY' value && 'X-RapidAPI-Host' and 'article-extractor-and-summarizer.p.rapidapi.com'
+-   delete the 'options' section
+-   import the VITE_RAPID_API_ARTICLE_KEY to article.js and use the API key to prepareHeaders
+-   return headers into prepareHeaders
+-   set the endpoint, `/summarize?url=${params.articleUrl}&length=3`
+-   use the Redux toolkit's hooks using export the articleApi
+-   import the 'useLazyGetSummaryQuery' into Demo.jsx and call the function
+-   Update the 'handleSubmit' funtion with articleUrl and setArticle state
+-   Now the site is working fine and can summarize any websites
