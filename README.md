@@ -1,4 +1,7 @@
 # SumrzAI - The AI Article Summarizer Application
+<p align="center">
+    <img src="./src/assets/Sumrz-ai.png">
+</p>
 <p align="left">
     <img src="./src/assets/logo.svg">
 </p>
