@@ -149,7 +149,7 @@ const Demo = () => {
 
       {/* Copyrights section */}
       <p className='text-center text-gray-500'>
-        © 2023 SumrzAI, All rights reserved by <a className='font-semibold orange_gradient opacity-80 transition duration-300 ease-in-out hover:opacity-100' href='https://vinojan.online'>Vinojan Abhimanyu</a>.
+        © 2023 SumrzAI, All rights reserved by <a className='font-semibold orange_gradient opacity-80 transition duration-300 ease-in-out hover:opacity-100' href='https://vinojan.online' target='_blank'>Vinojan Abhimanyu</a>.
       </p>
     </section>
   )
