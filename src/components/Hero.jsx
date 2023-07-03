@@ -10,7 +10,7 @@ const Hero = () => {
         <button
           className='black_btn'
           type='button'
-          onClick={() => window.open('https://dechorizon.com')}
+          onClick={() => window.open('https://github.com/Vinojan1999/AI-Article-Summarizer')}
         >
           GitHub
         </button>
@@ -23,7 +23,7 @@ const Hero = () => {
         </h1>
 
         <h2 className='desc'>
-          Simplify your reading with Sumz, an open-source
+          Simplify your reading with SumrzAI, an open-source
           article summarizer that transforms lengthy articles
           into clear and concise summaries. 
         </h2>

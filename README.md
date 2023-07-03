@@ -1,3 +1,12 @@
+# SumrzAI - The AI Article Summarizer Application
+<p align="left">
+    <img src="./src/assets/logo.svg">
+</p>
+
+## Steps that I have followed to develop this application
+
+You can follow these steps to recreate the same application by yourself. It's only for the educational purposes.
+
 -   Initialize the React App with Vite
 -   Install @reduxjs/toolkit and react-redux
 -   Structure the project
@@ -20,3 +29,60 @@
     then export articleApi (createApi function)
 -   Import articleApi from article.js file in store.js file
 -   Add the reducerPath in the reducer
+-   Passing articleApi.middleware to middleware
+-   Import store into main.jsx and passing store to Provider
+-   Add endpoint to article.js
+-   Add baseQuery to article.js
+-   Go to the RapidAPI, find the Article Extractor and Summarizer Api and Subscribe the FREE plan for testing purpose
+-   select the summarize endpoint, If you wanna test it let's click 'Test endpoint'
+-   copy the entire options and go back to article.js and paste there
+-   We need the url, so copy that entire url all the way to the forward slash withour summarize and paste it into baseUrl in createApi
+-   We need header, so add prepareHeaders into baseQuery
+-   set header with 'X-RapidAPI-Key' and actual 'KEY' value && 'X-RapidAPI-Host' and 'article-extractor-and-summarizer.p.rapidapi.com'
+-   delete the 'options' section
+-   import the VITE_RAPID_API_ARTICLE_KEY to article.js and use the API key to prepareHeaders
+-   return headers into prepareHeaders
+-   set the endpoint, `/summarize?url=${params.articleUrl}&length=3`
+-   use the Redux toolkit's hooks using export the articleApi
+-   import the 'useLazyGetSummaryQuery' into Demo.jsx and call the function
+-   Update the 'handleSubmit' funtion with articleUrl and setArticle state
+-   Now the site is working fine and can summarize any websites
+-   Set all articles in to the allArticles state and pushing the new articles as well
+-   Store all articles in localstorage using useEffect function
+-   If any articles in local storage, then selAllArticles from localstorage
+-   update the new articles with JSON.stringify to localstorage in handleSubmit function
+-   Develop the part of Browser URL history, 
+    Add the copy to clipborad function
+-   Display the summary of the article with fetching loader image and error message if the error might be occured. 
+
+-   Deploy the application.
+
+
+# template-vite-react-tailwind-v3
+
+- **stack:** vite + react
+- **tailwindcss:** v3.x
+- **API:** OpenAI's GPT-4 through RapidAPI
+- **Other Functionalities:** Browser History Storage & Copy to Clipborad
+
+## Started
+```bash
+npm install
+```
+
+---
+## Develop
+```bash
+npm run dev
+```
+
+---
+## Build
+```bash
+npm run build
+```
+
+---
+<p align="center">
+    © 2023 SumrzAI, All rights reserved by Vinojan Abhimanyu.
+</p>

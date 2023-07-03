@@ -1,3 +1,7 @@
+## Steps that I have followed to develop this application
+
+You can follow these steps to recreate the same application by yourself. It's only for the educational purposes.
+
 -   Initialize the React App with Vite
 -   Install @reduxjs/toolkit and react-redux
 -   Structure the project
@@ -38,3 +42,12 @@
 -   import the 'useLazyGetSummaryQuery' into Demo.jsx and call the function
 -   Update the 'handleSubmit' funtion with articleUrl and setArticle state
 -   Now the site is working fine and can summarize any websites
+-   Set all articles in to the allArticles state and pushing the new articles as well
+-   Store all articles in localstorage using useEffect function
+-   If any articles in local storage, then selAllArticles from localstorage
+-   update the new articles with JSON.stringify to localstorage in handleSubmit function
+-   Develop the part of Browser URL history, 
+    Add the copy to clipborad function
+-   Display the summary of the article with fetching loader image and error message if the error might be occured. 
+
+-   Deploy the application.
