@@ -58,7 +58,7 @@ You can follow these steps to recreate the same application by yourself. It's on
 -   Deploy the application.
 
 
-# template-vite-react-tailwind-v3
+# Application Details
 
 - **stack:** vite + react
 - **tailwindcss:** v3.x
